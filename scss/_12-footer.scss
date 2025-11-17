@@ -3,7 +3,7 @@
   #footer-container {
     background-color: #000;
     padding-top: 8rem;
-    padding-bottom: 5rem;
+    padding-bottom: 3rem;
     position: relative;
     &::before {
       content: "";
@@ -21,6 +21,7 @@
     }
     #footer-content {
       padding: 1.6rem;
+      padding-bottom: 6.6rem;
       @include flex-container;
       justify-content: center;
       align-items: flex-start;
@@ -94,6 +95,14 @@
         }
       }
     }
+    #copy {
+      border-top: 1px solid #ffffff34;
+      padding-top: 2.5rem;
+      color: map-get($map: $colors, $key: bg-white-100);
+      max-width: 120rem;
+      margin: 0 auto;
+    }
+
   }
 
   @include responsive(custom-670) {
