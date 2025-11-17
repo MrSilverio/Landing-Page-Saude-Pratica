@@ -1,0 +1,67 @@
+#for-whom-container {
+  margin-top: 4.6rem;
+  margin-bottom: 1.6rem;
+  h4 {
+    font-size: map-get($map: $fontSize, $key: fontSize-16);
+    color: map-get($map: $colors, $key: primary-color);
+    font-weight: 700;
+    text-align: center;
+    max-width: 33rem;
+    margin: $magin-defaut;
+    margin-bottom: 2.6rem;
+    position: relative;
+    &::after {
+      background-color: map-get($map: $colors, $key: light-orange);
+      position: absolute;
+      content: "";
+      display: block;
+      width: 3.75rem;
+      height: 0.25rem;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 1rem;
+      border-radius: 0.75rem;
+    }
+    &::before {
+      background-color: map-get($map: $colors, $key: light-orange);
+      position: absolute;
+      content: "";
+      display: block;
+      width: 3.75rem;
+      height: 0.25rem;
+      top: 50%;
+      transform: translateY(-50%);
+      right: 1rem;
+      border-radius: 0.75rem;
+    }
+  }
+  #grid-container {
+    display: grid;
+    grid-template-columns: 30rem;
+    gap: 2.6rem;
+    justify-content: center;
+    p {
+      font-size: map-get($map: $fontSize, $key: fontSize-16);
+      color: map-get($map: $colors, $key: primary-color);
+      text-align: center;
+    }
+    margin-bottom: 3.6rem;
+  }
+  .btn-container {
+    .arrow-container {
+      margin-top: 2rem;
+    }
+  }
+
+  @include responsive(phoneXL) {
+    #grid-container {
+      grid-template-columns: repeat(2, fit-content(32rem));
+      gap: 1rem;
+    }
+  }
+  @include responsive(desktopSmall) {
+    #grid-container {
+      grid-template-columns: repeat(4, fit-content(32rem));
+    }
+  }
+}

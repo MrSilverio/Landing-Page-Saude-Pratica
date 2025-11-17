@@ -1,0 +1,726 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="assets/fav-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/main.min.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+  <title>Saúde Prática</title>
+</head>
+<body>
+  <span id="inicio"></span>
+  <header id="home" class="container">
+    <div id="header-content">
+      <div id="header-logo">
+        <a href="/" id="header-anchor">
+          <img src="assets/01 - header-Logo.svg" alt="LOGO SAÚDE PRÁTICA">
+        </a>
+      </div>
+      <nav id="nav-bar">
+        <ul>
+          <li class="header-links"><a href="#inicio">Home</a></li>
+          <li class="header-links"><a href="#beneficios">Benefícios</a></li>
+          <li class="header-links"><a href="#colecao">Catálogo</a></li>
+          <li class="header-links"><a href="#lançamentos">Lançamentos</a></li>
+          <li class="header-links"><a href="#pacotes-exclusivos">Pacotes Exclusivos</a></li>
+          <li class="header-links"><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+
+      <button id="hamburger-btn" class="hamburger-menu" aria-label="Abrir menu" aria-expanded="false"
+        aria-controls="nav-bar">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+  <section id="s-hero" class="container">
+    <section id="s-hero-content">
+      <div id="s-hero_info-container" data-aos="zoom-in">
+        <span data-aos="fade-down" data-aos-delay="500">Saúde Prática</span>
+        <h1>EMAGREÇA SEM PASSAR FOME <br> <span>MESMO COM A ROTINA DO MUNDO REAL</span></h1>
+        <div class="btn-container">
+          <a href="#colecao" class="btn">Saber Mais</a>
+          <div class="arrow-container" data-aos="fade-up" data-aos-delay="300">
+            <img src="assets/01 - s-hero arrow.png" alt="ícone de um arco">
+          </div>
+        </div>
+      </div>
+      <div id="s-hero_bg-container" data-aos="fade-up">
+        <img src="assets/01 - s-hero img bg.webp" alt="background" id="bg-book">
+      </div>
+      <img data-aos="fade-right" src="assets/hero_shape-01.png" alt="leaves-tree" id="shape-01">
+      <div id="img-right" data-aos="fade-left">
+        <img src="assets/hero_shape-02.png" alt="leaves-tree" id="shape-02">
+      </div>
+    </section>
+  </section>
+  <section id="for-whom" class="container">
+    <div id="for-whom-container">
+      <h4>ESTE LIVRO É PARA VOCÊ SE...</h4>
+      <div id="grid-container">
+        <p class="grid-phrase" data-aos="fade-right" data-aos-disable-desktop="fade-up">✓ Você está cansada de dietas
+          que te deixam com fome e não funcionam</p>
+        <p class="grid-phrase" data-aos="fade-left" data-aos-disable-desktop="fade-up">✓ Quer emagrecer comendo comida
+          de verdade, não shakes e produtos caros</p>
+        <p class="grid-phrase" data-aos="fade-right" data-aos-disable-desktop="fade-up">✓ Tem rotina corrida e precisa
+          de receitas rápidas e saudáveis</p>
+        <p class="grid-phrase" data-aos="fade-left" data-aos-disable-desktop="fade-up">✓ Busca um método que funcione no
+          trabalho, com família, e eventos</p>
+      </div>
+      <div class="btn-container" data-aos="fade-up">
+        <a href="#colecao" class="btn">EU QUERO</a>
+        <div class="arrow-container" data-aos="fade-up" data-aos-delay="300">
+          <img src="assets/01 - s-hero arrow.png" alt="ícone de um arco">
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="beneficios" class="container">
+    <div id="beneficios-container">
+      <div id="beneficios-grid-container">
+        <div class="beneficios-items" data-aos="fade-right">
+          <img src="assets/beneficios/guia-completo.png" alt="">
+          <h3>GUIA COMPLETO LOW-CARB</h3>
+          <p>3 planos-modelo: Flexível, Low-Carb e Cetogênico consciente, todos detalhados</p>
+        </div>
+        <div class="beneficios-items" data-aos="fade-left">
+          <img src="assets/beneficios/compras.png" alt="">
+          <h3>LISTAS DE COMPRAS</h3>
+          <p>Grupos de alimentos organizados por densidade calórica para montar seu carrinho</p>
+        </div>
+        <div class="beneficios-items" data-aos="fade-right">
+          <img src="assets/beneficios/receitas.png" alt="">
+          <h3>RECEITAS semanais</h3>
+          <p>Café, almoço, jantar e lanches planejados com combinações práticas e saborosas</p>
+        </div>
+        <div class="beneficios-items" data-aos="fade-left">
+          <img src="assets/beneficios/estrategias.png" alt="">
+          <h3>ESTRATÉGIAS REAIS</h3>
+          <p>Como lidar com eventos, fim de semana, desejos e situações do dia a dia</p>
+        </div>
+      </div>
+      <div id="beneficios-img" data-aos="zoom-in">
+        <img src="assets/beneficios/model.jpg" alt="">
+      </div>
+      <img src="assets/beneficios/bg-green.png" alt="">
+    </div>
+  </section>
+  <section id="colecao" class="container">
+    <div id="catalogo-container">
+      <div id="header-catalogo" data-aos="fade-up">
+        <h3>EQUIPE SAÚDE PRÁTICA</h3>
+        <h2>NOSSA COLEÇÃO</h2>
+      </div>
+
+      <div class="books-card" id="book-01" data-aos="fade-right">
+        <div class="cover-book">
+          <div class="box-shadow">
+            <img src="assets/catalogo/Book-01-cover.jpg" alt="ilustra">
+            <img src="assets/catalogo/bg-cover-dots.png" alt="dots" class="dots">
+          </div>
+        </div>
+        <div class="books-info">
+          <h3>Emagreça sem passar fome, mesmo com <br> a rotina do mundo real</h3>
+          <img src="assets/catalogo/vector.svg" alt="">
+          <h4>Guia Prático De Aplicação: <br> Alimentação Low-Carb Consciente</h4>
+          <p>Cansada de dietas impossíveis que prometem milagres mas te deixam com fome, irritada e sem energia? Este
+            guia prático ensina o método da tríade poderosa: alimentos de baixa densidade calórica + alta saciedade +
+            efeito térmico.</p>
+          <p>Você vai aprender a montar pratos que enchem o estômago, controlam a fome naturalmente e fazem seu corpo
+            gastar mais energia para digeri-los. Tudo com comida de verdade, sem precisar pesar alimentos ou viver na
+            cozinha.</p>
+        </div>
+        <img src="assets/catalogo/small-circle.svg" alt="ilustra small circle" class="small-circle"
+          id="small-circle-01">
+      </div>
+
+      <div class="books-card box-row-reverse" id="book-02" data-aos="fade-left">
+        <div class="cover-book">
+          <div class="box-shadow">
+            <img src="assets/catalogo/Book-02-cover.png" alt="">
+            <img src="assets/catalogo/bg-cover-dots.png" alt="dots" class="dots">
+          </div>
+        </div>
+        <div class="books-info">
+          <h3>Desafio de 7 dias para uma adaptação consciente</h3>
+          <img src="assets/catalogo/vector.svg" alt="">
+          <h4>Construa o hábito passo a passo, sem pressão</h4>
+          <p>O mapa de adaptação gradual para transformar teoria em prática.</p>
+          <p>Este não é um desafio de perfeição - é um sistema de construção de hábitos em 7 dias progressivos. Você vai
+            implementar o método do livro na vida real, sem sofrimento, sem terrorismo nutricional.</p>
+          <ul>
+            <li><span>✓ Dia 1-3: Construa a base (volume, proteína, energia estratégica)</span></li>
+            <li><span>✓ Dia 4: Elimine sabotadores e limpe o paladar</span></li>
+            <li><span>✓ Dia 5: Domine hidratação e ritmo</span></li>
+            <li><span>✓ Dia 6: Ajuste fino personalizado conforme seu corpo</span></li>
+            <li><span>✓ Dia 7: Teste real (restaurante, evento ou dia corrido)</span></li>
+          </ul>
+        </div>
+        <img src="assets/catalogo/small-circle.svg" alt="ilustra small circle" class="small-circle"
+          id="small-circle-02">
+      </div>
+
+      <div class="books-card" id="book-03" data-aos="fade-right">
+        <div class="cover-book">
+          <div class="box-shadow">
+            <img src="assets/catalogo/Book-03-cover.png" alt="">
+            <img src="assets/catalogo/bg-cover-dots.png" alt="dots" class="dots">
+          </div>
+        </div>
+        <div class="books-info">
+          <h3>Manual de Consistência</h3>
+          <img src="assets/catalogo/vector.svg" alt="">
+          <h4>Como permanecer na dieta no longo prazo sem <br> desistir na primeira dificuldade</h4>
+          <p>95% das pessoas que perdem peso voltam a ganhar em até 2 anos. 70% desistem em menos de 30 dias. O problema
+            não é a dieta - é a falta de sistema de consistência.</p>
+          <p>Este manual é o antídoto para a desistência. Você vai aprender os 7 pilares da consistência alimentar:
+            identidade (não resultado), sistema de preparação, regra 80/20, recompensas não-alimentares, gestão de
+            ambiente, decisões antecipadas e medição inteligente.</p>
+          <p>Porque consistência não é nunca errar, é voltar rápido quando errar.</p>
+        </div>
+        <img src="assets/catalogo/small-circle.svg" alt="ilustra small circle" class="small-circle"
+          id="small-circle-03">
+      </div>
+
+      <div class="books-card box-row-reverse" id="book-04" data-aos="fade-left">
+        <div class="cover-book">
+          <div class="box-shadow">
+            <img src="assets/catalogo/Book-04-cover.png" alt="">
+            <img src="assets/catalogo/bg-cover-dots.png" alt="dots" class="dots">
+          </div>
+        </div>
+        <div class="books-info">
+          <h3>Escudos Sociais</h3>
+          <img src="assets/catalogo/vector.svg" alt="">
+          <h4>Estratégias para eventos, família e ambientes <br> hostis ao seu objetivo</h4>
+          <p>"A tia fez a torta <strong>SÓ PRA VOCÊ</strong>. A amiga diz que você ficou chata.
+            O colega deixa donuts na sua mesa toda segunda."</p>
+          <p>Você pode ter o melhor plano alimentar do mundo, mas a pressão social derruba
+            qualquer estratégia. Este guia é seu arsenal de defesa diplomática.</p>
+          <p>Aprenda a identificar os 5 tipos de sabotadores (bem-intencionado, invejoso,
+            competitivo, anfitrião ofendido e você mesmo) e como lidar com cada um sem
+            perder suas relações</p>
+          <p>Inclui frases prontas testadas para cada situação (escudos verbais), protocolo
+            completo de evento social passo a passo, e muito mais.</p>
+        </div>
+        <img src="assets/catalogo/small-circle.svg" alt="ilustra small circle" class="small-circle"
+          id="small-circle-04">
+      </div>
+
+      <div class="books-card" id="book-05" data-aos="fade-right">
+        <div class="cover-book">
+          <div class="box-shadow">
+            <img src="assets/catalogo/Book-05-cover.png" alt="">
+            <img src="assets/catalogo/bg-cover-dots.png" alt="dots" class="dots">
+          </div>
+        </div>
+        <div class="books-info">
+          <h3>Receitas Express</h3>
+          <img src="assets/catalogo/vector.svg" alt="">
+          <h4>40 pratos para fazer em menos de 15 minutos</h4>
+          <p>Um dos maiores obstáculos do emagrecimento é tempo para cozinhar. Este guia resolve isso com 40 receitas
+            testadas, prontas em 15 minutos ou menos.</p>
+          <p>Todas respeitam os 3 princípios do emagrecimento: baixa densidade calórica, alta saciedade e bom efeito
+            térmico.</p>
+          <p>Nada de ingredientes importados caros ou equipamentos especiais, só comida brasileira de verdade.
+            E cada receita com informações nutricionais, modo de preparo simples e dicas de substituição.</p>
+          <p>Inclui guia de compras semanal, planejamento de 7 dias completo, sistema de
+            rodízio de 4 semanas, tabela de substituições e 10 combinações de temperos
+            para nunca enjoar.</p>
+        </div>
+      </div>
+
+      <div id="circle-container">
+        <img src="assets/catalogo/circle-bg.svg" alt="ilustra circle" class="ilustra-circle" id="circle-01">
+        <img src="assets/catalogo/circle-bg.svg" alt="ilustra circle" class="ilustra-circle" id="circle-02">
+        <img src="assets/catalogo/circle-bg.svg" alt="ilustra circle" class="ilustra-circle" id="circle-03">
+        <img src="assets/catalogo/circle-bg.svg" alt="ilustra circle" class="ilustra-circle" id="circle-04">
+        <img src="assets/catalogo/circle-bg.svg" alt="ilustra circle" class="ilustra-circle" id="circle-05">
+      </div>
+
+    </div>
+  </section>
+  <section id="lançamentos" class="container">
+    <div id="releases-container">
+      <div id="release-01">
+        <h2 data-aos="zoom-in">Lançamento</h2>
+        <div class="books-card box-row-reverse" data-aos="fade-up">
+          <div class="cover-book">
+            <div class="box-shadow">
+              <img src="assets/catalogo/Releases/release-01.png" alt="">
+              <img src="assets/catalogo/bg-cover-dots.png" alt="dots" class="dots">
+            </div>
+          </div>
+          <div class="books-info">
+            <h3>Não Segui a Dieta, E Agora? <br> Plano 72h para Voltar ao Controle</h3>
+            <img src="assets/catalogo/Releases/vector-white.svg" alt="">
+            <h4>Recomece com um estratégia imbatível!</h4>
+            <p>"Comi demais no fim de semana. Estraguei tudo. Vou ter que começar do zero..."</p>
+            <p>É um erro muito comum achar que vai precisar começar do zero, mas quer saber uma verdade que ninguém
+              conta? <br><br>
+              <strong>TODOS</strong> que emagreceram de verdade já saíram da dieta. A diferença entre quem consegue e
+              quem desiste não é nunca errar, é <strong>SABER VOLTAR RÁPIDO</strong>.
+            </p>
+            <p>Este plano de resgate de 72 horas te ensina exatamente como reverter o "estrago", recuperar o controle
+              mental e físico, e voltar ao caminho sem culpa, sem compensações extremas, sem começar "do zero na
+              segunda".</p>
+            <p>Recomendado por diversos nutricionistas</p>
+          </div>
+        </div>
+      </div>
+      <div id="release-02">
+        <h2 data-aos="zoom-in">Lançamento</h2>
+        <div class="books-card" data-aos="fade-up">
+          <div class="cover-book">
+            <div class="box-shadow">
+              <img src="assets/catalogo/Releases/release-02.png" alt="">
+              <img src="assets/catalogo/bg-cover-dots.png" alt="dots" class="dots">
+            </div>
+          </div>
+          <div class="books-info">
+            <h3>Os 20 Venenos Ocultos <br> Da Sua Cozinha</h3>
+            <img src="assets/catalogo/vector.svg" alt="">
+            <h4>Alimentos inocentes que estão destruindo <br> sua saúde silenciosamente</h4>
+            <p><strong>⚠️ ATENÇÃO</strong>: Você está sendo envenenada (o). Não por acidente. Mas metodicamente,
+              lucrativamente,
+              legalmente.</p>
+            <p>A indústria percebeu que se você ACHA que está comendo saudável, compra ainda mais, e adoece igual.
+            </p>
+            <p>Este guia expõe os 20 alimentos mais ENGANOSOS do supermercado brasileiro que você compra achando que
+              está fazendo bem, mas que na verdade estão te destruindo silenciosamente.</p>
+            <p>Cada um dos 20 venenos revelados em 4 partes: o marketing enganoso (por que você compra), a verdade
+              química (o que realmente tem), o dano ao corpo (curto e longo prazo) e alternativa inteligente (prática e
+              acessível).</p>
+            <p>Inclui como a indústria lucra com sua doença, os 4 truques sujos (halo de saúde, porção mentirosa, 61
+              nomes do açúcar, aditivos invisíveis), plano de desintoxicação de 30 dias, lista completa de
+              substituições, guia de leitura de rótulos em 2 minutos e muito mais.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="doctors-testimonials" class="container">
+    <div id="doctors-testimonials-container">
+      <h2 data-aos="fade-right">RECOMENDADO POR PROFISSIONAIS</h2>
+      <div class="swiper mySwiper" data-aos="fade-left">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="swiper-content">
+              <div class="avaliation">
+                <img src="assets/doctors-testimonials/Five-Stars.png" alt="Stars-Real-Avaliations">
+              </div>
+              <p>"Em 20 anos de consultório, vi o 'efeito sanfona' destruir a saúde de inúmeros pacientes. A causa?
+                Dietas que não admitem falhas. A coleção da Equipe Saúde Prática é o oposto disso. O
+                <strong>'Manual de Consistência'</strong> e o <strong>'Plano 72h'</strong> são, na minha opinião, os
+                mais importantes. Eles ensinam
+                o que eu tento ensinar todos os dias: consistência é saber voltar rápido."
+              </p>
+              <div class="img-perfil">
+                <img src="assets/doctors-testimonials/dra.beatriz-meireles.png" alt="Dra. Beatriz Meirelles">
+              </div>
+              <span>Dra. Beatriz Meirelles <br> Especialista em Emagrecimento Sustentável</span>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="swiper-content">
+              <div class="avaliation">
+                <img src="assets/doctors-testimonials/Five-Stars.png" alt="Stars-Real-Avaliations">
+              </div>
+              <p>“Quando uma paciente me contou que tinha comprado uma coleção de emagrecimento, pensei que era mais um
+                desses golpes da internet, com receitas enjoativas e métodos difíceis que ninguém consegue seguir. Ela
+                me garantiu que não, que era diferente de tudo que ela já tinha comprado, e que estava funcionando de
+                verdade, então pedi para dar uma olhada, e fiquei apaixonado pelo material. <strong>"Emagreça Sem Passar
+                  Fome"</strong> é exatamente a base de tudo que eu aprendi ao longo da minha carreira, com todos os
+                pilares do emagrecimento, e de uma forma simples para qualquer pessoa entender, desde então passei a
+                recomendar para todas as minhas clientes como material complementar, mesmo não ganhando centavo para
+                isso. Equipe Saúde Prática fez trabalho incrível.</p>
+              <div class="img-perfil">
+                <img src="assets/doctors-testimonials/dr.ricardo-alves.png" alt="Dr. Ricardo Alves">
+              </div>
+              <span>Dr. Ricardo Alves <br> Nutricionista há 22 anos</span>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="swiper-content">
+              <div class="avaliation">
+                <img src="assets/doctors-testimonials/Five-Stars.png" alt="Stars-Real-Avaliations">
+              </div>
+              <p>"A queixa número 1 no meu consultório é 'não tenho tempo'. Fiquei encatada quando uma paciente me
+                mostrou como ela solucionou este problema através da coleção da Equipe Saúde Prática, que havia
+                comprado. O <strong>'Receitas Express'</strong> é brilhante, 40 pratos alinhados ao método e prontos em
+                menos de 15 minutos. Isso, combinado com o 'Desafio de 7 Dias', que constrói o hábito passo a passo,
+                torna a adesão ao plano viável para a 'rotina do mundo real'. Recomendo porque realmente é bom e
+                funciona, não ganho um centavo por isso."</p>
+              <div class="img-perfil">
+                <img src="assets/doctors-testimonials/dra.mariana-guedes.png" alt="Dra. Mariana Guedes">
+              </div>
+              <span>Dra. Mariana Guedes <br> Nutricionista há 8 anos, ajudando mulheres a emagrecer</span>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="swiper-content">
+              <div class="avaliation">
+                <img src="assets/doctors-testimonials/Five-Stars.png" alt="Stars-Real-Avaliations">
+              </div>
+              <p>"Meus pacientes sabem o que comer, a dificuldade está em como manter isso em eventos sociais e com a
+                família. O livro <strong>'Escudos Sociais'</strong> é uma ferramenta de nutrição comportamental
+                fantástica. Ele oferece estratégias reais para lidar com <strong>'sabotadores'</strong> e frases prontas
+                para situações e ambientes. Esta coleção entende que o emagrecimento é tanto psicológico quanto
+                fisiológico. É um material raro de se ver, por isso passei a recomendar, mesmo não ganhando nada para
+                isso."</p>
+              <div class="img-perfil">
+                <img src="assets/beneficios/model.jpg" alt="Dra. Clara Vasconcelos">
+              </div>
+              <span>Dra. Clara Vasconcelos <br>Nutricionista Especialista em Nutrição Comportamental</span>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="swiper-content">
+              <div class="avaliation">
+                <img src="assets/doctors-testimonials/Five-Stars.png" alt="Stars-Real-Avaliations">
+              </div>
+              <p>"Como nutricionista há mais de 25 anos, analiso novos métodos com ceticismo. Fiquei impressionado com
+                esta coleção. Ela integra perfeitamente os três pilares do emagrecimento sustentável: a ciência, prática
+                e a mentalidade. É um dos sistemas mais completos, realistas e cientificamente embasados que já vi. Eu
+                confio e indico este material."</p>
+              <div class="img-perfil">
+                <img src="assets/doctors-testimonials/dr.eduardo-matos.png" alt="Dr. Leonardo Matos">
+              </div>
+              <span>Dr. Leonardo Matos <br> Nutricionista e Autor</span>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+  </section>
+  <section id="pacotes-exclusivos" class="container">
+    <div id="packs-container">
+      <div id="header-packs" data-aos="fade-up">
+        <h3>EQUIPE SAÚDE PRÁTICA</h3>
+        <h2>PACOTES EXCLUSIVOS</h2>
+      </div>
+      <div id="products-container">
+        <div class="pack-products product-01" data-aos="fade-up">
+          <h3>START RÁPIDO</h3>
+          <span class="sub-title">Para quem quer começar a ver resultados de forma rápida.</span>
+          <div class="img-product">
+            <img src="assets/products/pack-01.png" alt="ilustra packs">
+          </div>
+          <div class="product-info">
+            <ul class="itens-includes">
+              <li>✓ Como Emagrecer Sem Passar Fome, Mesmo Com a Rotina do Mundo Real</li>
+              <li>✓ Desafio de 7 Dias Implementação guiada passo a passo</li>
+              <li>✓ 40 Receitas Express Pratos prontos em 15 minutos ou menos</li>
+            </ul>
+            <span class="price">R$47,00</span>
+            <a href="https://pay.kiwify.com.br/QGt14Yn" target="_blank" class="btn">COMEÇAR HOJE</a>
+          </div>
+        </div>
+        <div class="pack-products product-03" data-aos="fade-up">
+          <div id="best-selling">
+            <span>Mais <br> Vendido</span>
+          </div>
+          <h3>VIDA NOVA</h3>
+          <span id="title">Coleção Completa</span>
+          <span class="sub-title">A transformação total que te coloca no caminho certo sem esforço.</span>
+          <div class="img-product">
+            <img src="assets/products/pack-03.png" alt="ilustra packs">
+          </div>
+          <div class="product-info">
+            <ul class="itens-includes">
+              <li><span>✓</span> 1. Como Emagrecer Sem Passar Fome, Mesmo Com a Rotina do Mundo Real</li>
+              <li><span>✓</span> 2. Desafio de 7 Dias Implementação guiada passo a passo</li>
+              <li><span>✓</span> 3. Manual de Consistência, Como Permanecer na Dieta no Longo Prazo</li>
+              <li><span>✓</span> 4. Escudos Sociais: Estratégias para eventos e pressão social</li>
+              <li><span>✓</span> 5. 40 Receitas Express: Refeições completas em 15 minutos</li>
+              <li class="notice">INCLUI OS LANÇAMENTOS:</li>
+              <li><span>✓</span> 6. Não Segui a Dieta. E Agora? Plano 72h para Voltar ao Controle</li>
+              <li><span>✓</span> 7. Os 20 Venenos Ocultos Da Sua Cozinha, Alimentos Inocentes Que Estão Destruindo Sua
+                Saúde Silenciosamente</li>
+              <li class="notice">E MAIS</li>
+              <li class="exclusive">✓ BÔNUS #1: Acesso Gratuito a Atualizações</li>
+              <li class="exclusive">✓ BÔNUS #2: Acesso Gratuito aos Próximos Lançamentos</li>
+            </ul>
+            <span class="old-price">R$347,00</span>
+            <span class="price">R$147,00</span>
+            <a href="https://pay.kiwify.com.br/vkrcAcj" target="_blank" class="btn">MINHA MELHOR VERSÃO</a>
+          </div>
+        </div>
+        <div class="pack-products product-02" data-aos="fade-up">
+          <h3>FOCO TOTAL</h3>
+          <span class="sub-title">A solução completa para resultados consistentes e manutenção.</span>
+          <div class="img-product">
+            <img src="assets/products/pack-02.png" alt="ilustra packs">
+          </div>
+          <div class="product-info">
+            <ul class="itens-includes">
+              <li>✓ Como Emagrecer Sem Passar Fome, Mesmo Com a Rotina do Mundo Real</li>
+              <li>✓ Desafio de 7 Dias Implementação guiada passo a passo</li>
+              <li>✓ Manual de Consistência, Como Permanecer na Dieta no Longo Prazo</li>
+              <li>✓ Escudos Sociais: Estratégias para eventos e pressão social</li>
+              <li>✓ 40 Receitas Express: Refeições completas em 15 minutos</li>
+            </ul>
+            <span class="old-price">R$147,00</span>
+            <span class="price">R$97,00</span>
+            <a href="https://pay.kiwify.com.br/IvIlQ2e" target="_blank" class="btn">GARANTIR MEU ACESSO</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="client-testimonials" class="container">
+    <div id="client-testimonials-container">
+      <h2 data-aos="fade-right">Veja o que estão falando dessa coleção</h2>
+      <div class="swiper about-Product" data-aos="fade-left">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="testimonial-content">
+              <div class="testimonial-profile">
+                <img src="assets/clients-testimonials/01-julia-medeiros.jpg" alt="Perfil da cliente">
+              </div>
+              <span class="name">Júlia Medeiros</span>
+              <span class="testimonial">"Gente, a melhor parte é que eu não passo fome! Comi um pratão de salada com
+                carne e a balança baixou. O livro ensina direitinho o que comer. Achei que ia ser difícil, mas tô
+                amando! Recomendo pra todas as amigas."</span>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="testimonial-content">
+              <div class="testimonial-profile">
+                <img src="assets/clients-testimonials/02-carla-cristina.png" alt="Perfil da cliente">
+              </div>
+              <span class="name">Carla Cristina</span>
+              <span class="testimonial">"Meu problema era a desistência. Saía da dieta no fim de semana e jogava a
+                toalha na segunda. O Plano 72h me salvou! Deu errado? 3 dias e tô de volta, sem a culpa que me travava
+                antes. Agora sim é pra valer!"
+              </span>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="testimonial-content">
+              <div class="testimonial-profile">
+                <img src="assets/clients-testimonials/03-patricia-souza.webp" alt="Perfil da cliente">
+              </div>
+              <span class="name">Patrícia Souza</span>
+              <span class="testimonial">"A família me sabotava! 'Só um pedacinho, Patrícia'. Depois do livro dos
+                Escudos, aprendi a dizer não sem ofender. Não sou mais a 'chata da dieta' e, o melhor, tô emagrecendo
+                sem briga. Gratidão!"
+              </span>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="testimonial-content">
+              <div class="testimonial-profile">
+                <img src="assets/clients-testimonials/04-isabela-campos.jpg" alt="Perfil da cliente">
+              </div>
+              <span class="name">Isabela Campos</span>
+              <span class="testimonial">"Eu não tinha tempo pra cozinhar, achava que comida saudável era demorada. As
+                Receitas Express mudaram meu jogo! Em 15 minutos o almoço tá pronto e gostoso. Acabou a desculpa da
+                rotina corrida! Amei demais."</span>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="testimonial-content">
+              <div class="testimonial-profile">
+                <img src="assets/clients-testimonials/05-ana-lucia-gomes.png" alt="Perfil da cliente">
+              </div>
+              <span class="name">Ana Lúcia Gomes</span>
+              <span class="testimonial">"Chocada com o guia dos Venenos Ocultos! Eu comprava um monte de 'fit' que me
+                engordava. Agora sei ler o rótulo e só compro comida de verdade. A saúde melhorou demais, não é só o
+                peso! Abriu meus olhos."</span>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="testimonial-content">
+              <div class="testimonial-profile">
+                <img src="assets/clients-testimonials/06-fernanda-ribeiro.png" alt="Perfil da cliente">
+              </div>
+              <span class="name">Fernanda Ribeiro</span>
+              <span class="testimonial">"Finalmente um método que não é 8 ou 80. O Manual de Consistência é o ouro! Me
+                ensinou a criar sistemas pra não depender só da motivação. Perdi 12kg e não voltei mais. Isso que é vida
+                de verdade, né?"</span>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="testimonial-content">
+              <div class="testimonial-profile">
+                <img src="assets/clients-testimonials/07-luciana-mendes.jpg" alt="Perfil da cliente">
+              </div>
+              <span class="name">Luciana Mendes</span>
+              <span class="testimonial">"O Desafio de 7 dias foi o meu pontapé! Não senti aquela pressão de mudar tudo
+                de uma vez. Fui adaptando a cabeça e o corpo devagar, sem susto. Quando vi, o hábito tava criado!
+                Recomendo pra quem tem medo de começar."</span>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="testimonial-content">
+              <div class="testimonial-profile">
+                <img src="assets/clients-testimonials/08-marina-silveira.png" alt="Perfil da cliente">
+              </div>
+              <span class="name">Mariana Silveira</span>
+              <span class="testimonial">"Eu tava desacreditada em mim, achando que nunca ia dar certo. Esse método me
+                deu confiança! Não é só emagrecer, é ter o controle de volta. Minha autoestima tá lá em cima! Voltei a
+                usar biquíni na praia. A melhor compra!"</span>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="testimonial-content">
+              <div class="testimonial-profile">
+                <img src="assets/clients-testimonials/09-viviane-dias.png" alt="Perfil da cliente">
+              </div>
+              <span class="name">Viviane Dias</span>
+              <span class="testimonial">"Não é só um livro, é um kit de sobrevivência! Tem o manual, as receitas rápidas
+                e o plano pra quando a gente desliza. Antes eu gastava com um monte de coisa, agora só sigo o plano.
+                Economia e resultado!"</span>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+  </section>
+  <section id="promisses" class="container">
+    <div id="promisses-container">
+      <div id="next-month">
+        <h2 data-aos="fade-right">Nos Próximos 30 Dias Você Vai...</h2>
+        <ul>
+          <li data-aos="fade-right">
+            <div class="img">
+              <img src="assets/s-promises-arrow.svg" alt="arrow icon">
+            </div>
+            <p>Entender por que engordava comendo "saudável"</p>
+          </li>
+          <li data-aos="fade-right">
+            <div class="img">
+              <img src="assets/s-promises-arrow.svg" alt="arrow icon">
+            </div>
+            <p>Montar pratos que saciam sem engordar</p>
+          </li>
+          <li data-aos="fade-right">
+            <div class="img">
+              <img src="assets/s-promises-arrow.svg" alt="arrow icon">
+            </div>
+            <p>Emagrecer sem contar calorias</p>
+          </li>
+          <li data-aos="fade-right">
+            <div class="img">
+              <img src="assets/s-promises-arrow.svg" alt="arrow icon">
+            </div>
+            <p>Cozinhar refeições completas em 15min</p>
+          </li>
+          <li data-aos="fade-right">
+            <div class="img">
+              <img src="assets/s-promises-arrow.svg" alt="arrow icon">
+            </div>
+            <p>Nunca mais cair em marketing enganoso</p>
+          </li>
+          <li data-aos="fade-right">
+            <div class="img">
+              <img src="assets/s-promises-arrow.svg" alt="arrow icon">
+            </div>
+            <p>Proteger sua família de "venenos" industrializados</p>
+          </li>
+          <li data-aos="fade-right">
+            <div class="img">
+              <img src="assets/s-promises-arrow.svg" alt="arrow icon">
+            </div>
+            <p>Voltar a se sentir desejada</p>
+          </li>
+        </ul>
+      </div>
+      <div id="beneficios-img" data-aos="zoom-in">
+        <img
+          src="assets/antes-depois-cliente.avif"
+          alt="">
+      </div>
+    </div>
+  </section>
+  <section id="motivation" class="container">
+    <div id="motivation-content">
+      <h2 data-aos="fade-up">Por mais quantas vezes você vai se olhar no espelho e pensar que precisa muito emagrecer?
+      </h2>
+      <p data-aos="fade-up">Por mais quantas vezes você vai recomeçar? A dificuldade de emagrecer não está na balança,
+        está no dia
+        seguinte. Se você se sente frustrada, culpada e sem
+        tempo, não é sua culpa. É o método que falhou. Chegou a hora de trocar a motivação por um sistema de
+        consistência à prova de deslizes e da correria.</p>
+    </div>
+  </section>
+  <footer id="contato" class="container">
+    <div id="footer-container">
+      <div id="footer-content">
+        <div id="about-us">
+          <div id="logo">
+            <a href="#header-container">
+              <img src="assets/footer-logo.svg" alt="">
+            </a>
+          </div>
+          <p>Emagrecimento sustentável sem fome, com estratégias práticas, consistência e um plano para voltar ao
+            controle rápido na vida real.</p>
+        </div>
+        <div id="links-container">
+          <div id="menus">
+            <h4>MENUS</h4>
+            <ul id="links-interno">
+              <li><a href="#inicio">Início</a></li>
+              <li><a href="#beneficios">Benefícios</a></li>
+              <li><a href="#colecao">Nosso Catálogo</a></li>
+              <li><a href="#lançamentos">Lançamentos</a></li>
+              <li><a href="#pacotes-exclusivos">Pacotes Exclusivos</a></li>
+            </ul>
+          </div>
+          <div id="social-networks">
+            <h4>SOCIAIS</h4>
+            <ul id="links-externos">
+              <li><a href="https://www.instagram.com/saudepratica.oficial" target="_blank">Instagram</a></li>
+              <li><a href="https://XXXteste.com" target="_blank">Facebook</a></li>
+              <li><a href="https://www.tiktok.com/@saudepratica.oficial" target="_blank">TikTok</a></li>
+              <li><a href="https://x.com/SaudePraticaOf" target="_blank">X (Twitter)</a></li>
+              <li><a href="https://www.kwai.com/@saudepratica.oficial" target="_blank">Kawai</a></li>
+            </ul>
+          </div>
+        </div>
+        <div id="contact">
+          <h4>ENTRE EM CONTATO</h4>
+          <div id="email">
+            <div class="icon-container">
+              <img src="assets/footer icons/mail-icon.jpg" alt="mail-icon">
+            </div>
+            <span>
+              <a href="mailto:contatosaudepraticaoficial@gmail.com">contatosaudepraticaoficial@gmail.com</a>
+            </span>
+          </div>
+          <div id="site">
+            <div class="icon-container">
+              <img src="assets/footer icons/site-icon.svg" alt="site-icon">
+            </div>
+            <span><a href="https://saudepratica.netlify.app/">saudepratica.netlify.app</a></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="js/AOS-INIT.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="js/SWIPER-INITI-DOCTORS.js"></script>
+  <script src="js/SWIPER-INITI-CLIENT.js"></script>
+  <script src="js/SHOW-MENU.js"></script>
+</body>
+
+</html>
+</body>
+
+</html>

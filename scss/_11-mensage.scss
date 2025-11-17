@@ -1,0 +1,63 @@
+#motivation {
+  #motivation-content {
+    padding: 4.6rem 0;
+
+    h2,
+    p {
+      text-align: center;
+    }
+
+    h2 {
+      font-size: 2.4rem;
+      max-width: 96rem;
+      margin: $magin-defaut;
+      margin-bottom: 2.6rem;
+    }
+    p {
+      font-size: 1.6rem;
+      max-width: 84rem;
+      margin: $magin-defaut;
+    }
+  }
+
+  @include responsive(phoneXL) {
+    #motivation-content {
+      h2 {
+        font-size: 2.6rem;
+      }
+    }
+  }
+  @include responsive(custom-678) {
+    #motivation-content {
+      padding: 7.2rem 0;
+      h2 {
+        font-size: 2.9rem;
+      }
+    }
+  }
+  @include responsive(tablet) {
+    #motivation-content {
+      h2 {
+        font-size: 3.3rem;
+      }
+    }
+  }
+  @include responsive(tabletXL) {
+    #motivation-content {
+      h2 {
+        font-size: 3.8rem;
+      }
+    }
+  }
+  @include responsive(desktopSmall) {
+    #motivation-content {
+      padding: 10.2rem 0;
+      h2 {
+        font-size: 4.4rem;
+      }
+      p {
+        font-size: 1.8rem;
+      }
+    }
+  }
+}

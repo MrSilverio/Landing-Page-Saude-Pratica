@@ -1,0 +1,125 @@
+#contato {
+  padding: 0;
+  #footer-container {
+    background-color: #000;
+    padding-top: 8rem;
+    padding-bottom: 5rem;
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      top: -7rem;
+      z-index: 1;
+      left: 0;
+      right: 0;
+      width: 100%;
+      height: 150px;
+      background-image: url(../assets/doctors-testimonials/vector-bg.svg);
+      background-size: 100% 100%;
+      background-repeat: no-repeat;
+      background-position: center bottom;
+    }
+    #footer-content {
+      padding: 1.6rem;
+      @include flex-container;
+      justify-content: center;
+      align-items: flex-start;
+      flex-wrap: wrap;
+      max-width: 121.6rem;
+      margin: $magin-defaut;
+
+      gap: 5.8rem;
+
+      text-align: center;
+      font-size: 1.6rem;
+
+      h4 {
+        color: #ffffff;
+        font-size: 1.8rem;
+        font-weight: 700;
+        margin-bottom: 2.2rem;
+      }
+      a,
+      p,
+      span {
+        color: rgba(255, 255, 255, 0.703);
+      }
+      ul {
+        li {
+          &:not(:last-child) {
+            margin-bottom: 2.6rem;
+          }
+          a {
+            text-decoration: $underline-defaut;
+            text-underline-offset: $underline-offset;
+            transition: all 0.3s ease;
+            &:hover {
+              text-decoration: underline
+                map-get($map: $colors, $key: light-orange);
+              color: map-get($map: $colors, $key: light-orange);
+            }
+          }
+        }
+      }
+
+      #about-us {
+        #logo {
+          img {
+            max-width: 27.5rem;
+          }
+          margin-bottom: 3.4rem;
+        }
+        p {
+          max-width: 30rem;
+        }
+      }
+
+      #links-container {
+        @include flex-container;
+        justify-content: space-evenly;
+        text-align: left;
+        gap: 6.8rem;
+      }
+
+      #contact {
+        width: 31rem;
+        #email,
+        #site {
+          margin-bottom: 3.4rem;
+          @include flex-container;
+          gap: 0.8rem;
+          .icon-container {
+            max-width: 1.8rem;
+          }
+        }
+      }
+    }
+  }
+
+  @include responsive(custom-670) {
+    #footer-container {
+      #footer-content {
+        #about-us {
+          p {
+            text-align: left;
+          }
+        }
+      }
+    }
+  }
+  @include responsive(custom-1038) {
+    #footer-container {
+      #footer-content {
+        #links-container {
+          flex-grow: 1;
+        }
+        #contact {
+          #email,
+          #site {
+            justify-content: flex-start;
+          }
+        }
+      }
+    }
+  }
+}

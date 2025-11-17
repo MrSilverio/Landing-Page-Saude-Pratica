@@ -1,0 +1,26 @@
+h1, h2, h3, h4, h5 {
+  font-family: "Oswald", sans-serif;  
+}
+
+p, span, a {
+  font-family: "Roboto", sans-serif;
+}
+
+$colors: (
+  primary-color: #222222,
+  secondary-color: #777777,
+  light-orange: #FAA432,
+  bg-green: #0D9B4D,
+  bg-black: #090909,  
+  bg-ligh-gray: #F5F5F5,
+  bg-white-100: #ffffff
+);
+
+$fontSize: (
+  fontSize-14: 1.4rem,
+  fontSize-16: 1.6rem,
+);
+
+$underline-defaut: underline transparent;
+$underline-offset: 0.75rem;
+$magin-defaut: 0 auto;

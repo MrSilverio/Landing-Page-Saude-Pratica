@@ -1,0 +1,205 @@
+#lançamentos {
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 9rem;
+  margin-top: -9rem;
+  #releases-container {
+    #release-01 {
+      position: relative;
+      @include flex-container($direct: column);
+      background: url(../assets/beneficios/bg-green.png) no-repeat center center /
+        cover;
+      margin-top: 4rem;
+      margin-bottom: 4rem;
+
+      h2 {
+        position: relative;
+        font-size: 4.6rem;
+        margin-bottom: 6.6rem;
+        &::after {
+          position: absolute;
+          content: "";
+          display: block;
+          width: 25rem;
+          height: 0.3rem;
+          background-color: map-get($map: $colors, $key: light-orange);
+          left: 50%;
+          transform: translateX(-50%);
+          bottom: -1rem;
+        }
+      }
+
+      .books-card {
+        margin-bottom: 2.2rem;
+        padding: 0 1.6rem;
+        .books-info {
+          h3 {
+            br {
+              display: block;
+            }
+          }
+        }
+      }
+
+      &::before {
+        content: "";
+        position: absolute;
+        z-index: -2;
+
+        // POSICIONAMENTO VERTICAL: Âncora no topo
+        top: -4rem; /* Ajuste este valor para a posição vertical desejada */
+
+        /* ANCORAGEM HORIZONTAL */
+        left: 0;
+        right: 0; /* Estica a largura de ponta a ponta */
+
+        /* DIMENSIONAMENTO */
+        width: 100%;
+        height: 150px; /* Deve ser a altura do seu vetor PNG do topo */
+
+        /* CARREGAMENTO E AJUSTE DA IMAGEM */
+        background-image: url(../assets/beneficios/Vector-top-bg.png); /* Nome do arquivo do topo */
+        background-size: 100% 100%; /* Estica para preencher width e height */
+        background-repeat: no-repeat;
+        background-position: center top; /* Ancore a imagem na parte superior */
+      }
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: -4rem;
+        z-index: -2;
+
+        /* ANCORAGEM */
+        left: 0;
+        right: 0; /* Estica a largura de ponta a ponta (100% da largura do pai) */
+
+        /* DIMENSIONAMENTO */
+        width: 100%;
+        /* Defina uma altura para o pseudo-elemento ou ele terá altura zero */
+        height: 150px; /* Ajuste este valor de acordo com a altura do seu vetor PNG */
+
+        /* CARREGAMENTO E AJUSTE DA IMAGEM */
+        background-image: url(../assets/beneficios/Vector-bottom-bg.png);
+        background-size: 100% 100%; /* Faz a imagem cobrir 100% do width e 100% do height do pseudo-elemento */
+        background-repeat: no-repeat;
+        background-position: center bottom; /* Opcional: Ancore a imagem na parte inferior */
+      }
+    }
+
+    #release-02 {
+      position: relative;
+      @include flex-container($direct: column);
+      margin-top: 4rem;
+
+      h2 {
+        position: relative;
+        font-size: 4.6rem;
+        margin-top: 2.6rem;
+        margin-bottom: 6.6rem;
+        &::after {
+          position: absolute;
+          content: "";
+          display: block;
+          width: 25rem;
+          height: 0.3rem;
+          background-color: map-get($map: $colors, $key: light-orange);
+          left: 50%;
+          transform: translateX(-50%);
+          bottom: -1rem;
+        }
+      }
+
+      .books-card {
+        margin-bottom: 3.6rem;
+        padding: 0 1.6rem;
+        .books-info {
+          h3 {
+            br {
+              display: block;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @include responsive(desktop) {
+    #releases-container {
+      #release-01 {
+        .books-card {
+          .books-info {
+            max-width: 61rem;
+            h3 {
+              br {
+                display: block;
+              }
+            }
+          }
+        }
+      }
+
+      .books-card {
+        flex-direction: row;
+        gap: 4.6rem;
+
+        &:not(:last-child) {
+          margin-bottom: 9.6rem;
+        }
+        .small-circle {
+          bottom: -7.3rem;
+          opacity: unset;
+        }
+
+        .cover-book {
+          flex-shrink: 0;
+          .box-shadow {
+            img {
+              max-width: 50rem;
+            }
+          }
+        }
+
+        .books-info {
+          align-items: flex-start;
+          h3,
+          h4,
+          p {
+            text-align: left;
+          }
+          img {
+            margin: unset;
+          }
+          h3 {
+            font-size: 4.7rem;
+            line-height: 62px;
+            letter-spacing: -2.5%;
+            max-width: 100%;
+            br {
+              display: none;
+            }
+          }
+          h4 {
+            br {
+              display: none;
+            }
+          }
+        }
+
+        &.box-row-reverse {
+          flex-direction: row-reverse;
+        }
+      }
+    }
+  }
+  @include responsive(custom-1450) {
+    #releases-container {
+      #release-01,
+      #release-02 {
+        .books-card {
+          margin-left: unset;
+          margin-right: unset;
+        }
+      }
+    }
+  }
+}

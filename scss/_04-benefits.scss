@@ -1,0 +1,104 @@
+#beneficios {
+  padding-left: 0;
+  padding-right: 0;
+  height: auto;
+  padding-top: 10rem;
+  margin-top: -10rem;
+  #beneficios-container {
+    position: relative;
+    @include flex-container($direct: column);
+    gap: 3.6rem;
+    background: url(../assets/beneficios/bg-green.png) no-repeat center 20% /
+      cover;
+    padding: 2.6rem 1.6rem 2.6rem;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+
+    &::before {
+      content: "";
+      position: absolute;
+      z-index: -2;
+
+      // POSICIONAMENTO VERTICAL: Âncora no topo
+      top: -4rem; /* Ajuste este valor para a posição vertical desejada */
+
+      /* ANCORAGEM HORIZONTAL */
+      left: 0;
+      right: 0; /* Estica a largura de ponta a ponta */
+
+      /* DIMENSIONAMENTO */
+      width: 100%;
+      height: 150px; /* Deve ser a altura do seu vetor PNG do topo */
+
+      /* CARREGAMENTO E AJUSTE DA IMAGEM */
+      background-image: url(../assets/beneficios/Vector-top-bg.png); /* Nome do arquivo do topo */
+      background-size: 100% 100%; /* Estica para preencher width e height */
+      background-repeat: no-repeat;
+      background-position: center top; /* Ancore a imagem na parte superior */
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -4rem;
+      z-index: -2;
+
+      /* ANCORAGEM */
+      left: 0;
+      right: 0; /* Estica a largura de ponta a ponta (100% da largura do pai) */
+
+      /* DIMENSIONAMENTO */
+      width: 100%;
+      /* Defina uma altura para o pseudo-elemento ou ele terá altura zero */
+      height: 150px; /* Ajuste este valor de acordo com a altura do seu vetor PNG */
+
+      /* CARREGAMENTO E AJUSTE DA IMAGEM */
+      background-image: url(../assets/beneficios/Vector-bottom-bg.png);
+      background-size: 100% 100%; /* Faz a imagem cobrir 100% do width e 100% do height do pseudo-elemento */
+      background-repeat: no-repeat;
+      background-position: center bottom; /* Opcional: Ancore a imagem na parte inferior */
+    }
+    #beneficios-grid-container {
+      flex-grow: 1;
+      max-width: 64rem;
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 4.6rem;
+      justify-content: center;
+      padding: 0.6rem;
+    }
+
+    #beneficios-img {
+      img {
+        border-radius: 50%;
+        max-width: 44rem;
+      }
+    }
+
+    & > img {
+      display: none;
+      position: absolute;
+      z-index: -1;
+    }
+
+    @include responsive(phoneXL) {
+      #beneficios-grid-container {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+    @include responsive(tabletXL) {
+      flex-direction: row;
+      #beneficios-grid-container {
+        padding: 1.6rem;
+        max-height: 50rem;
+      }
+      #beneficios-img {
+        max-width: 50rem;
+      }
+    }
+    @include responsive(desktop) {
+      #beneficios-img {
+        max-width: 66rem;
+      }
+    }
+  }
+}

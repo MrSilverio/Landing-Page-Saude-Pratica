@@ -1,0 +1,155 @@
+#doctors-testimonials {
+  padding-left: 0;
+  padding-right: 0;
+  #doctors-testimonials-container {
+    position: relative;
+    background-color: rgba(10, 10, 10, 0.9);
+    margin-bottom: 4rem;
+    padding: 5.6rem 0;
+
+    h2 {
+      font-size: 2.6rem;
+      color: #fff;
+      text-align: center;
+      padding: 0 1.6rem;
+      margin-bottom: 3rem;
+    }
+    .mySwiper {
+      color: white;
+      padding: 0 1.6rem;
+      padding-bottom: 4rem;
+      max-width: 120rem;
+      overflow: inherit;
+      overflow-y: unset;
+      .swiper-wrapper {
+        align-items: center;
+        position: relative;
+        z-index: 2;
+        .swiper-slide {
+          .swiper-content {
+            text-align: center;
+            max-width: 50rem;
+            margin: 0 auto;
+            .avaliation {
+              width: fit-content;
+              margin: 0 auto;
+              margin-bottom: 2.6rem;
+              img {
+                max-width: 12rem;
+              }
+            }
+            p {
+              font-size: 1.6rem;
+              font-weight: 300;
+              margin-bottom: 2.6rem;
+              font-style: italic;
+            }
+            .img-perfil {
+              max-width: 8rem;
+              margin: 0 auto;
+              margin-bottom: 1.6rem;
+              img {
+                border-radius: 50%;
+              }
+            }
+            span {
+              font-weight: 700;
+              font-size: 1.6rem;
+            }
+          }
+        }
+      }
+      .swiper-pagination {
+        // margin-bottom: 1.75rem;
+        .swiper-pagination-bullet {
+          background-color: #fff;
+          height: 0.75rem;
+          transition: all 0.3s ease;
+        }
+        .swiper-pagination-bullet-active {
+          width: 2rem;
+          height: 0.75rem;
+          border-radius: 0.75rem;
+        }
+      }
+
+      --swiper-navigation-size: 44px;
+      .swiper-button-next,
+      .swiper-button-prev {
+        z-index: 99;
+        color: unset;
+        margin-right: 2rem;
+        margin-left: 2rem;
+        top: unset;
+
+        @include responsive(phoneXL) {
+          margin-right: 0 !important;
+          margin-right: 0 !important;
+          bottom: unset;
+          top: 65%;
+          transform: translatey(-50%);
+          margin-top: 0;
+        }
+        @include responsive(tablet) {
+          top: 50%;
+        }
+      }
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      z-index: 1;
+
+      // POSICIONAMENTO VERTICAL: Âncora no topo
+      top: -7rem; /* Ajuste este valor para a posição vertical desejada */
+
+      /* ANCORAGEM HORIZONTAL */
+      left: 0;
+      right: 0; /* Estica a largura de ponta a ponta */
+
+      /* DIMENSIONAMENTO */
+      width: 100%;
+      height: 150px; /* Deve ser a altura do seu vetor PNG do topo */
+
+      /* CARREGAMENTO E AJUSTE DA IMAGEM */
+      background-image: url(../assets/doctors-testimonials/vector-bg.svg); /* Nome do arquivo do topo */
+      background-size: 100% 100%; /* Estica para preencher width e height */
+      background-repeat: no-repeat;
+      background-position: center top; /* Ancore a imagem na parte superior */
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -7rem;
+      z-index: 1;
+      rotate: 180deg;
+
+      /* ANCORAGEM */
+      left: 0;
+      right: 0; /* Estica a largura de ponta a ponta (100% da largura do pai) */
+
+      /* DIMENSIONAMENTO */
+      width: 100%;
+      /* Defina uma altura para o pseudo-elemento ou ele terá altura zero */
+      height: 150px; /* Ajuste este valor de acordo com a altura do seu vetor PNG */
+
+      /* CARREGAMENTO E AJUSTE DA IMAGEM */
+      background-image: url(../assets/doctors-testimonials/vector-bg.svg); /* Nome do arquivo do topo */
+      background-size: 100% 100%; /* Faz a imagem cobrir 100% do width e 100% do height do pseudo-elemento */
+      background-repeat: no-repeat;
+      background-position: center bottom; /* Opcional: Ancore a imagem na parte inferior */
+    }
+
+    @include responsive(tablet) {
+      h2 {
+        font-size: 3.4rem;
+      }
+    }
+    @include responsive(desktopSmall) {
+      h2 {
+        font-size: 5.4rem;
+      }
+    }
+  }
+}

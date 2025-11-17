@@ -1,0 +1,194 @@
+#pacotes-exclusivos {
+  padding-top: 10rem;
+  margin-top: -10rem;
+  #packs-container {
+    #header-packs {
+      h3 {
+        max-width: 32rem;
+        margin: $magin-defaut;
+        position: relative;
+        text-align: center;
+        font-size: 2rem;
+        margin-bottom: 0.6rem;
+
+        &::after {
+          background-color: map-get($map: $colors, $key: light-orange);
+          position: absolute;
+          content: "";
+          display: block;
+          width: 3rem;
+          height: 0.3rem;
+          top: 50%;
+          transform: translateY(-50%);
+          left: 1.5rem;
+          border-radius: 0.75rem;
+        }
+        &::before {
+          background-color: map-get($map: $colors, $key: light-orange);
+          position: absolute;
+          content: "";
+          display: block;
+          width: 3rem;
+          height: 0.3rem;
+          top: 50%;
+          transform: translateY(-50%);
+          right: 1.5rem;
+          border-radius: 0.75rem;
+        }
+      }
+      h2 {
+        margin: $magin-defaut;
+        text-align: center;
+        font-size: 3.2rem;
+        line-height: 36px;
+        padding-top: 0.8rem;
+        padding-bottom: 0.8rem;
+        border: 2px double map-get($map: $colors, $key: light-orange);
+        border-radius: 1rem;
+        position: relative;
+        &::after {
+          position: absolute;
+          content: "";
+          display: block;
+          width: 25rem;
+          height: 0.3rem;
+          background-color: map-get($map: $colors, $key: light-orange);
+          left: 50%;
+          transform: translateX(-50%);
+          bottom: -2rem;
+        }
+        max-width: 30rem;
+      }
+      margin-bottom: 5.2rem;
+    }
+    #products-container {
+      @include flex-container($align: flex-start);
+      flex-wrap: wrap;
+      gap: 2rem;
+
+      max-width: fit-content;
+      margin: $magin-defaut;
+
+      .pack-products {
+        &.product-03 {
+          overflow: hidden;
+          position: relative;
+
+          #title {
+            text-align: center;
+            font-size: 2rem;
+            font-weight: 800;
+            margin-bottom: 1.6rem;
+            display: block;
+            text-decoration: underline #46e44c;
+            text-underline-offset: 0.75rem;
+          }
+
+          #best-selling {
+            position: absolute;
+            background-color: #46e44c;
+            width: 15rem;
+            height: 10rem;
+            @include flex-container($align: flex-end);
+            span {
+              font-size: 1.8rem;
+              padding-bottom: 0.6rem;
+            }
+            top: 0;
+            right: 0;
+            rotate: 45deg;
+            top: -31px;
+            right: -59px;
+          }
+
+          .product-info {
+            .notice {
+              text-align: center;
+              font-weight: 700;
+              font-size: 1.4rem;
+              width: fit-content;
+              margin: $magin-defaut;
+              margin-bottom: 1.6rem;
+              text-decoration: underline #46e44c;
+              text-underline-offset: 0.75rem;
+            }
+            .btn {
+              background-color: #46e44c;
+              font-weight: 600;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @include responsive(custom-678) {
+    #packs-container {
+      #header-packs {
+        h2 {
+          font-size: 4.2rem;
+          max-width: 40rem;
+        }
+      }
+    }
+  }
+  @include responsive(tablet) {
+    #packs-container {
+      #header-packs {
+        h2 {
+          font-size: 5.6rem;
+          max-width: 52rem;
+          border: none;
+        }
+      }
+    }
+  }
+  @include responsive(custom-872) {
+    #packs-container {
+      #products-container {
+        .pack-products {
+          &.product-03 {
+            order: 1;
+          }
+        }
+      }
+    }
+  }
+  @include responsive(tabletXL) {
+    #packs-container {
+      #header-packs {
+        h2 {
+          font-size: 5.2rem;
+          line-height: 65px;
+          max-width: 82.6rem;
+          border: none;
+        }
+      }
+    }
+  }
+  @include responsive(desktop) {
+    #packs-container {
+      #header-packs {
+        h2 {
+          max-width: 115rem;
+          font-size: 7.2rem;
+          line-height: 85px;
+          padding-bottom: 1.8rem;
+          border: unset;
+          margin-bottom: 5.6rem;
+        }
+      }
+    }
+  }
+  @include responsive(custom-1280) {
+    #packs-container {
+      #products-container {
+        .pack-products {
+          &.product-03 {
+            order: 0;
+          }
+        }
+      }
+    }
+  }
+}
